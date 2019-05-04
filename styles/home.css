@@ -1,0 +1,155 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+
+body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+header{
+    display: flex;
+}
+header div.left{
+    width: 9vw;
+    height: 151px;
+}
+header div.center{
+    width: 82vw;
+    height: 151px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    position: relative;
+}
+header div.right{
+    width: 9vw;
+    height: 151px;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header .logo{
+    height: 40px;
+    margin-left: 40px;
+}
+header .logo img{
+    height: 100%;
+}
+header nav{
+    position: absolute;
+    right: 0%;
+    margin-right: 40px;
+}
+ul li{
+    margin-left: 42px;
+    cursor: pointer;
+    font-size: 22px;
+}
+sup{
+    vertical-align: top;
+    color: #2E175A;
+}
+
+
+
+
+/* bar handle */
+.side-bar{
+    position: absolute;
+    width: 1px;
+    border-left: solid 1px #E0E0E0 ;
+    height: 100vmax;
+}
+.top-bar{
+    position: absolute;
+    width: 100%;
+    border-top: solid 1px #E0E0E0 ;
+    height: 1px;
+}
+
+.left-bar{
+    left: 9%;
+}
+.right-bar{
+    right: 9%;
+
+}
+
+.first-top{
+    /* top: 3.3vh; */
+    top: 151px;
+}
+.second-top{
+    /* top: 96.7vh; */
+    top: 749px;
+}
+
+/* section handle */
+#general{
+    display: flex;
+}
+
+#general div{
+    background-color: green;
+}
+
+div.left{
+    width: 9vw;
+    height: 100vh;
+}
+div.center{
+    width: 82vw;
+    height: 100vh;
+}
+div.right{
+    width: 9vw;
+    height: 100vh;
+}
+
+
+/* left bar content */
+
+section#general .right{
+    display: flex;
+    flex-direction: column;
+}
+
+section#general .right p{
+    margin: 0;
+    transform: rotateZ(-90deg);
+}
+section#general .right .contact-bar{
+    width: 2px;
+    height: 81px;
+    background: #1E2022;
+}
+
+section#general .right .pen{
+    background-color: #2E175A;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+section#general .right .pen img{
+    transform: translateY(75%);
+
+}
