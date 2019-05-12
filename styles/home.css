@@ -204,7 +204,7 @@ section#general .right .side-menu .pen img{
 
 }
 
-#project span{
+#project .big-title{
     font-weight: bold;
     font-size: 228px;
     line-height: 311px;
@@ -224,7 +224,6 @@ section#general .right .side-menu .pen img{
 #project .missions .mission{
     width: 91vw;
     height: 552px;
-    background-color: red;
     display: flex;
 
 }
@@ -242,17 +241,81 @@ section#general .right .side-menu .pen img{
     top:50%;
     left:50%;
     transform: translateY(-50%) translateX(-50%);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.388332);
     
 }
 
 #project .missions .mission .mission-description{
     height: 100%;
     width: 28.45%;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    position: relative;
+}
+#project .missions .mission .mission-description *{
+    display: inline;
+}
+
+#project .missions .mission .mission-description .mission-id{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+    color: #1E2022;
+}
+#project .missions .mission .mission-description .mission-date{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2E175A;
+}
+#project .missions .mission .mission-description .mission-text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1E2022;
+}
+#project .missions .mission .mission-description a{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #1E2022;
 
 }
+#project .missions .mission .mission-description div.mission-line{
+    background-color: #BAB2C8;
+    height: 2px;
+    width: 130px;
+    transform-origin: 0 0;
+    transform: scaleX(0.3);
+}
+#project .missions .mission .mission-description div.mission-bottom{
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+#project .missions .mission .mission-description .mission-post{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2E175A;
+    text-transform: capitalize;
+}
+#project .missions .mission .mission-description .mission-name{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    color: #1E2022;
+    text-transform: capitalize;
+}
+
 
 /* mission spécification */
 #project .missions .mission.transway .mission-img{
     background-color: #AAE9E7;
 }
+#project .missions .mission.techstory .mission-img{
+    background-color: #54AEEB;
+}
+
