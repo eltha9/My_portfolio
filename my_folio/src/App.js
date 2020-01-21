@@ -17,15 +17,26 @@ import About from './pages/About'
 import Project from './pages/Project'
 import NoMatch from './pages/NoMatch'
 
-
+//image import
+import logo from './images/logo.svg'
 
 function App() {
   return (
     <div className="app">
+      <div className="left-marge">
+        <div className="mini-div-menu"></div>
+      </div>
+      <div className="middle-content">
       <Router>
-        <Link to="/">Home</Link>
-        <Link to="/project/yayzeiuyaizey">Project</Link>
-        <Link to="/about">about</Link>
+        <nav>
+        <Link to="/"><img src={logo} className="logo"/> </Link>
+        <div className="links">
+          <Link to="/">Home</Link>
+          <Link to="/project/yayzeiuyaizey">Project<sup>02</sup></Link>
+          <Link to="/about">about</Link>
+        </div>
+        </nav>
+
 
         <Switch>
           <Route exact path="/">
@@ -34,14 +45,18 @@ function App() {
           <Route path="/about">
             <About/>
           </Route>
-          <Route exact path="/project/:id" component={Project}  />
+          <Route exact path="/project/:name" component={Project}  />
 
           <Route path="*">
             <NoMatch />
           </Route>
         </Switch>
 
-      </Router>
+        </Router>
+      </div>
+      <div className="right-marge">
+        <div className="mini-div-menu"></div>
+      </div>
     </div>
   )
 }

@@ -8,6 +8,9 @@ class About extends Component{
     // static props ={
         
     // }
+    componentDidMount(){
+        document.title = "Philippe Dos Santos - About"
+    }
 
     render(){
         return(

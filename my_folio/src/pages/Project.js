@@ -17,9 +17,12 @@ class Project extends Component{
         // this.name = useParams()
         // console.log(this.props.match.params.id)
     }
+    componentDidMount(){
+        document.title = `Philippe Dos Santos - ${this.props.match.params.name} project`
+    }
 
     static props = {
-
+        name : PropTypes.string.isRequired
     }
 
     
@@ -27,7 +30,7 @@ class Project extends Component{
     render(){
         return(
             <div className="project">
-                {this.props.match.params.id}
+                {this.props.match.params.name}
             </div>
         )
     }

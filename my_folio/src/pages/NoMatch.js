@@ -7,6 +7,10 @@ class NoMatch extends Component{
 
         
     }
+
+    componentDidMount(){
+        document.title = "Oups 404"
+    }
     static props ={
         
     }
