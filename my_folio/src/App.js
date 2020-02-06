@@ -20,11 +20,16 @@ import NoMatch from './pages/NoMatch'
 //image import
 import logo from './images/logo.svg'
 
+import git from './images/github.svg'
+import linkedin from './images/linkedin.svg'
+import pen from './images/pen.svg'
+
 function App() {
   return (
     <div className="app">
       <div className="left-marge">
         <div className="mini-div-menu"></div>
+        <div className="mini-div-bottom"></div>
       </div>
       <div className="middle-content">
       <Router>
@@ -34,6 +39,7 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/project/yayzeiuyaizey">Project<sup>02</sup></Link>
           <Link to="/about">about</Link>
+          {/* <a href="#contact"></a> */}
         </div>
         </nav>
 
@@ -56,6 +62,18 @@ function App() {
       </div>
       <div className="right-marge">
         <div className="mini-div-menu"></div>
+        <div className="mini-div-bottom">
+          <div className="side-bar">
+            <a className="link linkedin" href="https://www.linkedin.com/in/philippe-dos-santos-788395173/" title="My linkedin"><img src={linkedin} alt="linkedin logo"/></a>
+            <a className="link git" href="https://github.com/eltha9" title="My github repo"><img src={git} alt="github logo"/></a>
+            
+            <div className="vertical-line"></div>
+            <span>contact me</span>
+            <div className="contact-pen">
+              <img src={pen} alt=""/>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
