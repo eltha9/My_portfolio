@@ -27,9 +27,12 @@ import pen from './images/pen.svg'
 function App() {
   return (
     <div className="app">
-      <div className="left-marge">
+      {/* <div className="left-marge">
+
         <div className="mini-div-menu"></div>
         <div className="mini-div-bottom"></div>
+        <div className="home-footer-marge"></div>
+
       </div>
       <div className="middle-content">
       <Router>
@@ -39,7 +42,7 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/project/yayzeiuyaizey">Project<sup>02</sup></Link>
           <Link to="/about">about</Link>
-          {/* <a href="#contact"></a> */}
+          <a href="#contact"></a> 
         </div>
         </nav>
 
@@ -61,6 +64,7 @@ function App() {
         </Router>
       </div>
       <div className="right-marge">
+
         <div className="mini-div-menu"></div>
         <div className="mini-div-bottom">
           <div className="side-bar">
@@ -74,7 +78,48 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+
+        <div className="home-footer-marge"></div>
+
+
+      </div> */}
+
+      <Router>
+        <div className="row navigation ">
+          <div className="left-marge"></div>
+
+          <div className="content">
+            <nav>
+            <Link to="/"><img src={logo} className="logo"/> </Link>
+            <div className="links">
+              <Link to="/">Home</Link>
+              <Link to="/project/yayzeiuyaizey">Project<sup>02</sup></Link>
+              <Link to="/about">about</Link>
+              <a href="#contact"></a> 
+            </div>
+            </nav>
+          </div>
+
+          <div className="right-marge"></div>
+        </div>
+
+
+        <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route path="/about">
+            {/* <About/> */}
+          </Route>
+          {/* <Route exact path="/project/:name" component={Project}  /> */}
+
+          <Route path="*">
+            {/* <NoMatch /> */}
+          </Route>
+        </Switch>
+
+      </Router>
+
     </div>
   )
 }
