@@ -21,12 +21,12 @@ class Footer extends Component{
                         <img src={Logo} alt=""/>
                     </div>
 
-                    <div className="credentials">
+                    <div className="footer__credentials">
                         <span>Copyright Philippe Dos Santos 2019</span>
                         <span>Designed by Alban Delachaume</span>
                     </div>
 
-                    <div className="socials">
+                    <div className="footer__socials">
                         <a className="link linkedin" href="https://www.linkedin.com/in/philippe-dos-santos-788395173/" title="My linkedin"><img src={linkedin} alt="linkedin logo"/></a>
                         <a className="link git" href="https://github.com/eltha9" title="My github repo"><img src={git} alt="github logo"/></a>
                     </div>
