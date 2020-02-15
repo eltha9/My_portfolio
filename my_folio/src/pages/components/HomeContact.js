@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import ContactIllustration from '../../images/contact_illu.svg'
+
 class HomeContact extends Component{
     constructor(props){
         super(props)
@@ -23,7 +25,7 @@ class HomeContact extends Component{
 
                             <div className="form__container__illustration">
                                 <div className="illustration__container">
-                                    <img src="" alt=""/>
+                                    <img src={ContactIllustration} alt=""/>
                                 </div>
                             </div>
 
