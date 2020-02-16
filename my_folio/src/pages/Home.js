@@ -10,16 +10,38 @@ import HomeContact from './components/HomeContact'
 class Home extends Component{
     constructor(props){
         super(props)
+
+        this.state = {
+            projects: []
+        }
     }
 
     componentDidMount(){
         document.title = "Philippe Dos Santos - Web Developer"
+        this.get_projects()
     }
     static props = {
 
     }
 
+    get_projects(){
+        let url= '../data/projects.json'
+
+        fetch(url).then((json)=>{
+
+            return json.json()
+        }).then((_json)=>{
+
+            this.setState({projects: _json})
+
+            console.log(this.state)
+        })
+
+    }
+
     render(){
+        
+
         return(
             <div className="home">
 
@@ -34,8 +56,9 @@ class Home extends Component{
                                 Project
                             </div>
                             <div className="projects">
-                                <ProjectPresentation projectImage="https://i.picsum.photos/id/223/400/300.jpg" projectNumber="01" projectColor="A2348F" />
-                                <ProjectPresentation projectImage="https://i.picsum.photos/id/223/400/300.jpg" projectNumber="01" projectColor="A2888F" />
+                                {this.state.projects.map(({id, projects})=>(
+                                    <ProjectPresentation key={id} projectImage="https://i.picsum.photos/id/223/400/300.jpg" projectNumber="01" projectColor="A2348F" />    
+                                ))}
                             </div>
                         </div>
                         

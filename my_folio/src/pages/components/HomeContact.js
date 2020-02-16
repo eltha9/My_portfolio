@@ -32,23 +32,23 @@ class HomeContact extends Component{
                             <form>
                                 <div className="form__row">
                                     <label>
-                                        <span>name</span>
-                                        <input type="text"/>
+                                        <span>Name</span>
+                                        <input type="text" placeholder="what is your name ?"/>
                                     </label>
                                     <label>
-                                        <span>name</span>
-                                        <input type="text"/>
+                                        <span>Email</span>
+                                        <input type="email" placeholder="Your email"/>
                                     </label>
 
                                 </div>
                                 <div className="form__row">
                                 <label>
-                                        <span>name</span>
-                                        <input type="text"/>
+                                        <span>Message</span>
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="Say hello!"></textarea>
                                     </label>
                                 </div>
                                 <div className="form__row">
-                                    <input type="sumbit" value="Send"/>
+                                    <input type="submit" value="Send"/>
                                 </div>
 
                                 
