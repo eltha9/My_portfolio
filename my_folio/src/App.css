@@ -421,3 +421,56 @@ form label input{
 .footer .content .footer__socials .link:first-of-type{
   margin-right: 20px;
 }
+
+
+
+/* About */
+.about{
+
+}
+
+.about__content{
+  height: 80vh;
+}
+.about__content .content{
+  display: flex;
+  flex-direction: row;
+
+  box-sizing: border-box;
+  padding: 0 40px;
+}
+.about__content .content .content__left{
+  height: 100%;
+  width: 50%;
+  /* background-color: blue; */
+
+  box-sizing: border-box;
+  padding-top: 8vw;
+}
+.about__content .content .content__left span{
+
+
+  font-size: 10vw;
+  font-weight: 600;
+  color: var(--black);
+}
+
+
+.about__content .content .content__right{
+  height: 100%;
+  width: 50%;
+  /* background-color: orange; */
+  box-sizing: border-box;
+  padding: 50px 0;
+}
+.about__content .content .content__right .scrollable{
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+
+
+.about__bottom{
+  height: 10vh;
+}

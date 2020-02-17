@@ -1,0 +1,31 @@
+{
+    "name": "Philippe Dos Santos",
+    "about_description":"je suis un développeur back et front-end, motivé par la curiosité et la constante évolution de son secteur. Actuellement à la recherche d'un stage de 6 mois en tant que développeur Full-stack",
+    "about_experience":[
+        {
+            "year": 2018 ,
+            "name":"Transway",
+            "position": "Front-dev" 
+
+        },
+        {
+            "year": 2018 ,
+            "name":"Transway",
+            "position": "Front-dev" 
+
+        }
+    ],
+    "about_other":{
+        "do":[
+            "front developer",
+            "back developer",
+            "ui"
+        ],
+        "love":[
+            "music",
+            "sport",
+            "gaming"
+        ]
+    }
+
+}

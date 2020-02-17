@@ -14,11 +14,14 @@ class Home extends Component{
         this.state = {
             projects: []
         }
+
+        this.get_projects()
     }
 
     componentDidMount(){
         document.title = "Philippe Dos Santos - Web Developer"
-        this.get_projects()
+        document.body.style.overflow = 'unset'
+        
     }
     static props = {
 
@@ -34,18 +37,14 @@ class Home extends Component{
 
             this.setState({projects: _json})
 
-            console.log(this.state)
         })
 
     }
 
     render(){
-        
 
         return(
             <div className="home">
-
-
 
                     <HomeTop/>
                     <section className="row home__main">
@@ -56,15 +55,16 @@ class Home extends Component{
                                 Project
                             </div>
                             <div className="projects">
-                                {this.state.projects.map(({id, projects})=>(
-                                    <ProjectPresentation key={id} projectImage="https://i.picsum.photos/id/223/400/300.jpg" projectNumber="01" projectColor="A2348F" />    
+                                {this.state.projects.map((projects, id)=>(
+                                    <ProjectPresentation key={id} data={projects} id={id}/>    
+                                    
                                 ))}
                             </div>
                         </div>
                         
                         <div className="right-marge"></div>
                     </section>
-                    <HomeContact/>
+                    {/* <HomeContact/> */}
                     <Footer/>
             </div>
         )

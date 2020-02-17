@@ -109,7 +109,7 @@ function App() {
             <Home/>
           </Route>
           <Route path="/about">
-            {/* <About/> */}
+            <About/>
           </Route>
           {/* <Route exact path="/project/:name" component={Project}  /> */}
 
