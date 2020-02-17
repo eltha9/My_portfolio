@@ -469,6 +469,85 @@ form label input{
   overflow-x: scroll;
 }
 
+.about__content .content .content__right .scrollable .experience{
+  display: flex;
+  flex-direction: column;
+}
+
+.experience .experience__mini{
+  font-size: 1.1em;
+  font-weight: normal;
+  color: var(--black);
+}
+.experience .experience__name{
+  /* font-size: 3.2em; */
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: var(--purple);
+}
+.experience .experience__description{
+  margin:0;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: var(--black);
+
+
+}
+.experience table.experience__table{
+  margin-top:50px;
+}
+.experience table.experience__table td{
+  width:50%;
+  text-align: left;
+}
+
+table.experience__table td,table.experience__table th, table.experience__table tr{
+  padding:0;
+}
+
+.experience__table thead th{
+  text-align: left;
+  font-size: 1.9em;
+  font-weight: 500;
+  color: var(--black);
+}
+.experience__table thead tr{
+  
+}
+.experience__table thead tr th .table__line{
+  width: 100%;
+  height: 1px;
+
+  background-color: var(--purple);
+}
+
+.experience__table tbody tr{
+
+}
+.experience__table tbody tr td.table__left{
+  vertical-align: top;
+  font-size: 1.1em;
+  font-weight: 500;
+  color:var(--black);
+}
+.experience__table tbody tr td.table__right{
+  display: flex;
+  flex-direction: column;
+
+}
+.experience__table tbody tr td.table__right span.table__right__title{
+  font-size: 1.2em;
+  font-weight: 500;
+  color:var(--black);
+}
+.experience__table tbody tr td.table__right span.table__right__span{
+  font-size: 1em;
+  font-weight: 500;
+  color:var(--purple);
+}
+
+
+
 
 
 .about__bottom{
