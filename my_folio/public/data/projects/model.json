@@ -1,0 +1,30 @@
+{
+    "main_image":"",
+    "project_name":"",
+    "project_description":"",
+    "date":"",
+    "role":"",
+    "content":[
+        {
+            "type":"single-image-border",
+            "bgc_color":"",
+            "image_link":""
+        },
+        {
+            "type":"text-with-right-image",
+            "section_title":"",
+            "section_description":"",
+            "section_image":""
+        },
+        {
+            "type":"single-image",
+            "section_title":"",
+            "section_image":""
+        }
+    ],
+    "next_project":{
+        "name":"",
+        "role":"",
+        "date":""
+    }
+}

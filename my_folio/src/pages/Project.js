@@ -30,7 +30,36 @@ class Project extends Component{
     render(){
         return(
             <div className="project">
-                {this.props.match.params.name}
+                <div className="project__top">
+                    <div className="left-marge"></div>
+
+                    <div className="content">
+
+                    </div>
+
+                    <div className="right-marge"></div>
+                </div>
+
+                <div className="project__content">
+                    <div className="left-marge"></div>
+
+                    <div className="content">
+                        {this.props.match.params.name}
+                    </div>
+
+                    <div className="right-marge"></div>
+                </div>
+
+                <div className="project__bottom">
+                    <div className="left-marge"></div>
+
+                    <div className="content">
+
+                    </div>
+
+                    <div className="right-marge"></div>
+                </div>
+                
             </div>
         )
     }

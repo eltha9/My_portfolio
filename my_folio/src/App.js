@@ -111,7 +111,7 @@ function App() {
           <Route path="/about">
             <About/>
           </Route>
-          {/* <Route exact path="/project/:name" component={Project}  /> */}
+          <Route exact path="/project/:name" component={Project}  />
 
           <Route path="*">
             {/* <NoMatch /> */}
