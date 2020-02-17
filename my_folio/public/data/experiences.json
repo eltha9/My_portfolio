@@ -17,14 +17,14 @@
     ],
     "about_other":{
         "do":[
-            "front developer",
-            "back developer",
-            "ui"
+            "Front-end",
+            "Back-end"
         ],
         "love":[
-            "music",
-            "sport",
-            "gaming"
+            "Sport",
+            "Gaming",
+            "Electronic",
+            "Gardening"
         ]
     }
 

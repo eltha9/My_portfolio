@@ -80,7 +80,7 @@ class About extends Component{
                                         <tbody>
                                             <tr>
 
-                                                <td className="table__left">titre</td>
+                                                <td className="table__left">What I do</td>
 
                                                 <td className="table__right">
                                                     {!('data' in this.state)? '': this.state.data.about_other.do.map((item,id)=>(
@@ -93,7 +93,7 @@ class About extends Component{
                                             </tr>
                                             <tr>
 
-                                                <td className="table__left">titre</td>
+                                                <td className="table__left">What I love</td>
 
                                                 <td className="table__right">
                                                     {!('data' in this.state)? '': this.state.data.about_other.love.map((item,id)=>(

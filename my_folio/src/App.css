@@ -467,6 +467,10 @@ form label input{
   height: 100%;
   width: 100%;
   overflow-x: scroll;
+
+  box-sizing: border-box;
+  padding-top: 200px;
+
 }
 
 .about__content .content .content__right .scrollable .experience{
@@ -493,8 +497,11 @@ form label input{
 
 
 }
-.experience table.experience__table{
+.experience table.experience__table:first-of-type{
   margin-top:50px;
+}
+.experience table.experience__table{
+
 }
 .experience table.experience__table td{
   width:50%;
@@ -503,6 +510,7 @@ form label input{
 
 table.experience__table td,table.experience__table th, table.experience__table tr{
   padding:0;
+  
 }
 
 .experience__table thead th{
@@ -510,9 +518,8 @@ table.experience__table td,table.experience__table th, table.experience__table t
   font-size: 1.9em;
   font-weight: 500;
   color: var(--black);
-}
-.experience__table thead tr{
-  
+
+  vertical-align: middle;
 }
 .experience__table thead tr th .table__line{
   width: 100%;
@@ -529,6 +536,16 @@ table.experience__table td,table.experience__table th, table.experience__table t
   font-size: 1.1em;
   font-weight: 500;
   color:var(--black);
+  
+}
+.experience__table td span{
+  width: 100%;
+}
+.experience__table td span:last-of-type{
+  padding-bottom: 30px;
+}
+.experience__table th:first-of-type{
+  padding: 15px 0;
 }
 .experience__table tbody tr td.table__right{
   display: flex;
