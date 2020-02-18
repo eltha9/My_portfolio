@@ -3,7 +3,7 @@
   --black:#1E2022;
   --purple:#2E175A;
   --lightgrey:#BAB2C8;
-
+  --red: #E8594B;
  
 }
 
@@ -563,10 +563,152 @@ table.experience__table td,table.experience__table th, table.experience__table t
   color:var(--purple);
 }
 
-
-
-
-
 .about__bottom{
   height: 10vh;
+}
+
+
+
+
+/* Project page */
+.project{
+  
+}
+
+
+.project .project__top{
+  height: 80vh;
+}
+.project .project__top .content{
+  box-sizing: border-box;
+  padding: 40px;
+ } 
+.project .project__top .content img{
+  width: 100%;
+  height: 100%;
+} 
+
+
+
+.project .project__content{
+
+} 
+.project .project__content .content{
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  padding: 80px 40px;
+} 
+.project .project__content .content .content__top{
+  display: flex;
+  flex-direction: row;
+}
+.project .project__content .content .content__top .content__top__left{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+  box-sizing: border-box;
+  padding-right: 8vw;
+}
+.project .project__content .content .content__top .content__top__left h2{
+  margin:0;
+  margin-bottom: 15px;
+
+  font-weight: bold;
+  font-size: 3.3em;
+}
+.project .project__content .content .content__top .content__top__left p{
+  margin:0;
+
+  font-size: 1em;
+  font-weight: normal;
+  color: var(--black)
+}
+.project .project__content .content .content__top .content__top__right{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.project .project__content .content .content__top .content__top__right span.mini__title{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.project .project__content .content .content__top .content__top__right span{
+  font-size: 1.1em;
+  font-weight: normal;
+  color: var(-black);
+}
+.project .project__content .content .content__top .content__top__right .capsule{
+  display: flex;
+  flex-direction: column;
+}
+.project .project__content .content .content__top .content__top__right .capsule:last-of-type{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.project .project__content .content h3{
+  margin-top: 40px;
+
+  font-size: 1.5em;
+  font-weight: 600;
+  color:var(--black);
+
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.project .project__content .content h3::after{
+  height: 2px;
+  width: 40%;
+  content: ' ';
+  background-color: var(--lightgrey);
+}
+
+
+
+.project .project__bottom{
+  background-color: #3B3B42;
+  height: 40vh;
+}
+.project .project__bottom .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project .project__bottom .content .next{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  text-decoration: none;
+  color: white;
+
+  width: 60%;
+}
+.project .project__bottom .content .next .next__name{
+  position: relative;
+}
+.project .project__bottom .content .next .next__name h2{
+  margin:0;
+  color: white;
+  text-transform: none;
+}
+.project .project__bottom .content .next .next__name .floating{
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  color: var(--red);
+}
+
+.project .project__bottom .content .next .next__role{
+  display: flex;
+  flex-direction: column;
+}
+.project .project__bottom .content .next .next__date{
+  display: flex;
+  flex-direction: column;
 }

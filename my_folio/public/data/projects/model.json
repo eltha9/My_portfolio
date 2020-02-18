@@ -4,6 +4,7 @@
     "project_description":"",
     "date":"",
     "role":"",
+    "font_color":"",
     "content":[
         {
             "type":"single-image-border",
@@ -24,6 +25,7 @@
     ],
     "next_project":{
         "name":"",
+        "link":"",
         "role":"",
         "date":""
     }
