@@ -10,12 +10,15 @@ class Project extends Component{
         super(props)
 
         this.state={}
+
     }
     componentDidMount(){
         document.title = `Philippe Dos Santos - ${this.props.match.params.name} project`
-
+        
+        this.setState({title:this.props.match.params.name})
+        
         this.getProjectContent()
-        console.log(this.state.data)
+
     }
 
     static props = {
@@ -83,7 +86,7 @@ class Project extends Component{
                     <div className="left-marge"></div>
 
                     <div className="content">
-                        <Link className="next" to={!('data' in this.state) ? '/': `/project/${this.state.data.next_project.link}`}>
+                        <a className="next" href={!('data' in this.state) ? '/': `/project/${this.state.data.next_project.link}`}>
                             <div className="next__name">
                                 <h2>{('data' in this.state)? this.state.data.next_project.name :''}</h2>
                                 <div className="floating">Next Project</div>
@@ -98,7 +101,7 @@ class Project extends Component{
                                 <span className="mini__title">Date</span>
                                 <span>{('data' in this.state)? this.state.data.next_project.date :''}</span>
                             </div>
-                        </Link>
+                        </a>
                     </div>
 
                     <div className="right-marge"></div>
