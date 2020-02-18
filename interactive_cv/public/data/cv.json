@@ -1,0 +1,112 @@
+{
+  "profile_picture":"/profil.png",
+  "name":"Philippe Dos Santos",
+  "decritpion":"Adepte du développement web, je m'adapte à mon environnement de travail tout en y ajoutant ma touche personnelle. Actuellement à la recherche d’un stage de 6 mois en tant que développeur full-stack à partir de mars 2020",
+  "contacts":[
+      {
+          "link":"mailto:santosphilippe93@gmail.com",
+          "text":"santosphilippe93@gmail.com",
+          "icon":"/icon/mail.svg"
+      },
+      {
+          "link":"https://elph.fr",
+          "text":"elph.fr",
+          "icon":"/icon/site.svg"
+      },
+      {
+          "link":"https://www.linkedin.com/in/philippe-dos-santos-788395173/",
+          "text":"Philippe Dos Santos",
+          "icon":"/icon/linkedin.svg"
+      },
+      {
+          "link":"tel:0635305682",
+          "text":"06 35 30 56 82",
+          "icon":"/icon/phone.svg"
+      }
+  ],
+  "expertise":[
+      "HTML / CSS / JS",
+      "PHP / Symfony / Slim / SQL",
+      "Three.js / Vue.js / React.js",
+      "Linux",
+      "Kotlin / Swift"
+  ],
+  "langues":[
+      {
+          "langue":"Français",
+          "niveau":"Maternelle"
+      },  
+      {
+          "langue":"Portugais",
+          "niveau":"Maternelle"
+      },  
+      {
+          "langue":"Anglais",
+          "niveau":"Technique"
+      }
+  ],
+  "education":[
+      {
+          "ecole":" HÉTIC, école des métiers  du web à Montreui",
+          "anne":"2017-2022",
+          "cursus":"Cursus Grande École"
+      },
+      {
+          "ecole":"Sorbonne Université, campus Jussieu",
+          "anne":"2014-2016",
+          "cursus":"Licence en Électronique, Énergie et Automatisme"
+      },
+      {
+          "ecole":"Sorbonne Université, campus Jussieu",
+          "anne":"2013-2014",
+          "cursus":"Première année de licence en Physique, Chimie, Géosience et Ingénierie (PCGI)"
+      },
+      {
+          "ecole":" Sorbonne Université, Campus de Pierre et Marie Curie",
+          "anne":"2012_2013",
+          "cursus":"Première année commune aux études de santé (PACES)"
+      },
+      {
+          "ecole":"Lycée St-Louis-St-Clotilde",
+          "anne":"2012",
+          "cursus":"Baccalauréat scientifique, spécialité science de la vie de la vie et de la terre (SVT)"
+      }
+  ],
+  "experiences":[
+    {
+        "statu":"Stagiaire développeur back-end Symfony chez Edreams Factory",
+        "date":"Juillet - Septembre 2019",
+        "competence":[
+            "Développement d'ERP",
+            "Intégration de PDF",
+            "Méthod Agile"
+        ]
+    },
+    {
+        "statu":"Employé administratif Clinique du Mont-louis, Paris (11ème)",
+        "date":"Été 2018 - été 2017",
+        "competence":[
+            "Archivage",
+            "Prise de rendez-vous",
+            "Gestion de plusieurs postes"
+        ]
+    },
+    {
+        "statu":"Chef de projet / Développeur back-end: Refonte du site Transway.fr",
+        "date":"Juin 2017",
+        "competence":[
+            "Gestion client",
+            "Festion d'équipe",
+            "Développement Php"
+        ]
+    },
+    {
+        "statu":"Réceptionniste Clinique du Mont-louis, Paris (11ème)",
+        "date":"Été 2016",
+        "competence":[
+            "Renseigner et rediriger les patients",
+            "Réception des patients"
+        ]
+    }
+  ]
+}
