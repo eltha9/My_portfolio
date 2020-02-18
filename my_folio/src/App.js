@@ -93,7 +93,8 @@ function App() {
             <Link to="/"><img src={logo} className="logo"/> </Link>
             <div className="links">
               <Link to="/">Home</Link>
-              <Link to="/project/yayzeiuyaizey">Project<sup>02</sup></Link>
+              {/* <Link to="/project/yayzeiuyaizey">Project<sup>02</sup></Link> */}
+              <a>Project<sup>02</sup></a>
               <Link to="/about">about</Link>
               <a href="#contact"></a> 
             </div>

@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 // special component
+import SingleImage from './components/projectComponents/SingleImage'
+import SingleImageBorder from './components/projectComponents/SingleImageBorder'
+import TextWithRightImage from './components/projectComponents/TextWithRightImage'
 
 class Project extends Component{
     constructor(props){
@@ -77,6 +80,31 @@ class Project extends Component{
                         </div>
                         <h3>Discover {('data' in this.state)? this.state.data.project_name : ''}</h3>
 
+                        {!('data' in this.state) ? '': this.state.data.content.map((type,id)=>{
+
+                            switch(type.type){
+                                case 'single-image-border':
+                                    return (
+                                        <SingleImageBorder data={type} key={id} ></SingleImageBorder>
+                                    )
+                                    break 
+                                case 'text-with-right-image':
+                                    return (
+                                        <TextWithRightImage data={type} key={id} ></TextWithRightImage>
+                                    )
+                                    break
+                                case 'single-image':
+                                    return (
+                                        <SingleImage data={type} key={id} ></SingleImage>
+                                    )
+                                    break
+                                default:
+                                    return (
+                                        <div key={id}></div> 
+                                    )
+                            }
+                            
+                        })}
                     </div>
 
                     <div className="right-marge"></div>
