@@ -39,7 +39,7 @@ class App extends Component {
           <img src={('cv' in this.state) ? this.state.cv.profile_picture: 'https://pbs.twimg.com/profile_images/1092451830758547457/EqQ6Csl3_400x400.jpg'} />
           <h1>{('cv' in this.state) ? this.state.cv.name : ''}</h1>
         </div>
-        <div className="container">
+        <div className="container first">
             <div className="container__title">
               <h2>Contacts</h2>
             </div>
@@ -54,10 +54,10 @@ class App extends Component {
             </div>
 
             <div className="container__bottom">
-              <div className="columun">
+              <div className="column">
                 
                 <div className="enum">
-                  <h2>Expertise</h2>
+                  <h2 className="solo">Expertise</h2>
                   <ul>
                     {!('cv' in this.state) ? '' : this.state.cv.expertise.map((expertise,id)=>(
                       <Expertise key={id} data={expertise} />  
@@ -67,7 +67,7 @@ class App extends Component {
                 </div>
 
                 <div className="enum">
-                  <h2>Langues</h2>
+                  <h2 className="solo">Langues</h2>
                   <ul>
                     {!('cv' in this.state) ? '' : this.state.cv.langues.map((langue,id)=>(
                       <Langue key={id} data={langue} />  
@@ -78,8 +78,8 @@ class App extends Component {
 
               </div>
 
-              <div className="columun">
-                <h2>éducation</h2>
+              <div className="column column__right">
+                <h2 className="solo right">éducation</h2>
                 <ul>
                   {!('cv' in this.state) ? '' : this.state.cv.education.map((edu,id)=>(
                     <Education key={id} data={edu} />  
@@ -89,7 +89,7 @@ class App extends Component {
               </div>
             </div>
         </div>
-        <div className="container">
+        <div className="container second">
             <div className="container__title">
               <h2>Expérience</h2>
             </div>

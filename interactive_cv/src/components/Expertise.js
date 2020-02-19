@@ -11,7 +11,7 @@ class Expertise extends Component{
     render(){
 
         return(
-            <li>
+            <li className="sub-li">
                 {this.props.data}
             </li>
         )

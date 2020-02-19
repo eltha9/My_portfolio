@@ -13,8 +13,8 @@ class Contact extends Component{
 
     render(){
         return(
-            <li>
-                <a href={this.props.data.link}>
+            <li className="contact">
+                <a href={this.props.data.link} target="_blank">
                     {this.props.data.text} 
                     <div className="icon">
                         <img src={this.props.data.icon}/>

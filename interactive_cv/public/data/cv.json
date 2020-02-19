@@ -1,7 +1,7 @@
 {
   "profile_picture":"/profil.png",
   "name":"Philippe Dos Santos",
-  "decritpion":"Adepte du développement web, je m'adapte à mon environnement de travail tout en y ajoutant ma touche personnelle. Actuellement à la recherche d’un stage de 6 mois en tant que développeur full-stack à partir de mars 2020",
+  "description":"Adepte du développement web, je m'adapte à mon environnement de travail tout en y ajoutant ma touche personnelle. Actuellement à la recherche d’un stage de 6 mois en tant que développeur full-stack à partir de mars 2020",
   "contacts":[
       {
           "link":"mailto:santosphilippe93@gmail.com",
@@ -47,7 +47,7 @@
   ],
   "education":[
       {
-          "ecole":" HÉTIC, école des métiers  du web à Montreui",
+          "ecole":" HÉTIC, école des métiers  du web à Montreuil",
           "anne":"2017-2022",
           "cursus":"Cursus Grande École"
       },
@@ -63,7 +63,7 @@
       },
       {
           "ecole":" Sorbonne Université, Campus de Pierre et Marie Curie",
-          "anne":"2012_2013",
+          "anne":"2012-2013",
           "cursus":"Première année commune aux études de santé (PACES)"
       },
       {

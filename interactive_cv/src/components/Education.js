@@ -11,9 +11,9 @@ class Education extends Component{
     render(){
 
         return(
-            <li>
+            <li className="education">
                 <span className="education__ecole">{this.props.data.ecole}</span>
-                <span className="education__date">{this.props.data.date}</span>
+                <span className="education__date">{this.props.data.anne}</span>
                 <span className="education__cursus">{this.props.data.cursus}</span>
             </li>
         )

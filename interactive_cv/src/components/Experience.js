@@ -12,11 +12,13 @@ class Experience extends Component{
 
         return(
             <div className="experience">
-                <h3>{this.props.data.statu}</h3>
-                <span>{this.props.data.date}</span>
+                <div className="experience__top">
+                    <h3>{this.props.data.statu}</h3>
+                    <span>{this.props.data.date}</span>
+                </div>
                 <ul className="taches">
                     {this.props.data.competence.map((compe,id)=>(
-                        <li key={id}> {compe} </li>
+                        <li key={id}>- {compe} </li>
                     ))}
                 </ul>
             </div>

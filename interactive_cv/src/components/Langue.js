@@ -12,7 +12,7 @@ class Langue extends Component{
     render(){
 
         return(
-            <li>
+            <li className="sub-li">
                 {this.props.data.langue} : {this.props.data.niveau}
             </li>
         )
