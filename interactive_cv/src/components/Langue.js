@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import PropType from 'prop-types'
 
 class Langue extends Component{
-    constructor(props){
-        super(props)
-    }
+
     static props={
         data: PropType.object.isRequired
     }

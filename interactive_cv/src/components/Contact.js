@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import PropType from 'prop-types'
 
 class Contact extends Component{
-    constructor(props){
-        super(props)
-    }
 
     static props ={
         data: PropType.object.isRequired
@@ -14,10 +11,10 @@ class Contact extends Component{
     render(){
         return(
             <li className="contact">
-                <a href={this.props.data.link} target="_blank">
+                <a href={this.props.data.link} target="_blank" rel="noopener noreferrer">
                     {this.props.data.text} 
                     <div className="icon">
-                        <img src={this.props.data.icon}/>
+                        <img src={this.props.data.icon} alt="icon"/>
                     </div>
                 </a>
             </li>

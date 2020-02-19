@@ -36,7 +36,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="top">
-          <img src={('cv' in this.state) ? this.state.cv.profile_picture: 'https://pbs.twimg.com/profile_images/1092451830758547457/EqQ6Csl3_400x400.jpg'} />
+          <img src={('cv' in this.state) ? this.state.cv.profile_picture: 'https://pbs.twimg.com/profile_images/1092451830758547457/EqQ6Csl3_400x400.jpg'} alt="Philippe Dos Santos profil face"/>
           <h1>{('cv' in this.state) ? this.state.cv.name : ''}</h1>
         </div>
         <div className="container first">
