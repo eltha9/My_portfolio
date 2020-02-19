@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   getCv(){
-    const url = '/data/cv.json'
+    const url = './data/cv.json'
 
     fetch(url).then((json)=>{
       return json.json()

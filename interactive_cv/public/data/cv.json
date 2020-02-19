@@ -1,27 +1,27 @@
 {
-  "profile_picture":"/profil.png",
+  "profile_picture":"./profil.png",
   "name":"Philippe Dos Santos",
   "description":"Adepte du développement web, je m'adapte à mon environnement de travail tout en y ajoutant ma touche personnelle. Actuellement à la recherche d’un stage de 6 mois en tant que développeur full-stack à partir de mars 2020",
   "contacts":[
       {
           "link":"mailto:santosphilippe93@gmail.com",
           "text":"santosphilippe93@gmail.com",
-          "icon":"/icon/mail.svg"
+          "icon":"./icon/mail.svg"
       },
       {
           "link":"https://elph.fr",
           "text":"elph.fr",
-          "icon":"/icon/site.svg"
+          "icon":"./icon/site.svg"
       },
       {
           "link":"https://www.linkedin.com/in/philippe-dos-santos-788395173/",
           "text":"Philippe Dos Santos",
-          "icon":"/icon/linkedin.svg"
+          "icon":"./icon/linkedin.svg"
       },
       {
           "link":"tel:0635305682",
           "text":"06 35 30 56 82",
-          "icon":"/icon/phone.svg"
+          "icon":"./icon/phone.svg"
       }
   ],
   "expertise":[
