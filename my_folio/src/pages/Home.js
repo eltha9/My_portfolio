@@ -28,7 +28,7 @@ class Home extends Component{
     }
 
     get_projects(){
-        let url= '/data/projects.json'
+        let url= './data/projects.json'
 
         fetch(url).then((json)=>{
 
