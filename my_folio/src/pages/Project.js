@@ -29,7 +29,7 @@ class Project extends Component{
     }
 
     getProjectContent(){
-        let url = `./data/projects/${this.props.match.params.name}.json`
+        let url = `/data/projects/${this.props.match.params.name}.json`
 
         fetch(url).then((json)=>{
             return json.json()

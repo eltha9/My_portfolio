@@ -7,6 +7,12 @@
     "font_color":"56FE81",
     "content":[
         {
+            "type":"text-with-right-image",
+            "section_title":"Simple et robuste",
+            "section_description":"Un design simple mais efficace développer entièrement en natif qui en fait ça plus grande robustesse",
+            "section_image":"https://i.picsum.photos/id/129/400/300.jpg"
+        },
+        {
             "type":"single-image-border",
             "bgc_color":"AA2343",
             "image_link":"https://i.picsum.photos/id/229/400/300.jpg"

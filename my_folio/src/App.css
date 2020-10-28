@@ -262,7 +262,7 @@ padding: 60px;
 }
 .project__bottom .project__type{
   font-size: 1.1em;
-  
+  text-transform: uppercase;
   color: var(--purple)
 }
 .project__bottom h2{
